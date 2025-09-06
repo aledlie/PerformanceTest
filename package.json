@@ -1,0 +1,49 @@
+{
+  "name": "comprehensive-performance-test-suite",
+  "version": "1.0.0",
+  "description": "Industry-standard performance testing suite including Core Web Vitals, load testing, stress testing, soak testing, and scalability testing",
+  "main": "master-performance-suite.js",
+  "scripts": {
+    "test": "node master-performance-suite.js --comprehensive",
+    "test:quick": "node master-performance-suite.js --quick",
+    "test:endurance": "node master-performance-suite.js --endurance",
+    "test:core-web-vitals": "node core-web-vitals.js",
+    "test:beyond-core-web-vitals": "node beyond-core-web-vitals.js",
+    "test:load": "node load-testing.js",
+    "test:stress": "node stress-testing.js",
+    "test:soak": "node soak-testing.js",
+    "test:scalability": "node scalability-testing.js",
+    "schema-test": "node schema-impact-test.js"
+  },
+  "keywords": [
+    "performance",
+    "testing",
+    "core-web-vitals",
+    "load-testing",
+    "stress-testing",
+    "soak-testing",
+    "scalability-testing",
+    "web-performance",
+    "benchmarking"
+  ],
+  "author": "Performance Test Suite",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "puppeteer": "^21.0.0"
+  },
+  "devDependencies": {
+    "jq": "^1.7.3"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/performance-test-suite"
+  },
+  "bugs": {
+    "url": "https://github.com/your-org/performance-test-suite/issues"
+  },
+  "homepage": "https://github.com/your-org/performance-test-suite#readme"
+}

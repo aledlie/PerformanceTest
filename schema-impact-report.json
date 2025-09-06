@@ -1,0 +1,152 @@
+{
+  "testSuite": "Schema.org Impact Analysis",
+  "website": "https://www.austininspiredmovement.com",
+  "timestamp": "2025-09-05T23:16:14.339Z",
+  "summary": {
+    "totalTests": 20,
+    "seoScore": 95,
+    "llmScore": 85,
+    "performanceScore": 94,
+    "overallScore": 91
+  },
+  "detailedResults": {
+    "seo": {
+      "schemaCompliance": {
+        "score": 80,
+        "maxScore": 100,
+        "details": "Found 7 schema types: LocalBusiness, EducationalOrganization, Event, Event, VideoObject, VideoObject, VideoObject"
+      },
+      "structuredDataCoverage": {
+        "score": 83,
+        "maxScore": 100,
+        "details": "Business schema includes 6 properties"
+      },
+      "localSEOSignals": {
+        "score": 100,
+        "maxScore": 100,
+        "details": "Local signals: Austin location, postal address, geo coordinates, service area"
+      },
+      "richSnippetReadiness": {
+        "score": 100,
+        "maxScore": 100,
+        "details": "Rich snippets enabled: ratings(true), events(true), videos(true), pricing(true), offers(true)"
+      },
+      "entityRecognition": {
+        "score": 100,
+        "maxScore": 100,
+        "details": "Entity clearly defined with organization type, location, and alternative names"
+      },
+      "reviewRatingSignals": {
+        "score": 100,
+        "maxScore": 100,
+        "details": "Complete review system with aggregate ratings, review counts, and individual reviews"
+      },
+      "videoContentSEO": {
+        "score": 100,
+        "maxScore": 100,
+        "details": "Video content optimized with duration, thumbnails, educational content, and audience targeting"
+      }
+    },
+    "llm": {
+      "entityExtractionClarity": {
+        "score": 55,
+        "maxScore": 100,
+        "details": "Entity clearly defined with multiple identifiers, descriptions, and context"
+      },
+      "relationshipMapping": {
+        "score": 100,
+        "maxScore": 100,
+        "details": "Clear relationships between courses, events, videos, and organization"
+      },
+      "contextualUnderstanding": {
+        "score": 100,
+        "maxScore": 100,
+        "details": "Rich contextual information about dance instruction, skill levels, and specializations"
+      },
+      "aiSearchCompatibility": {
+        "score": 80,
+        "maxScore": 100,
+        "details": "AI-compatible features: multiple schemas(true), detailed descriptions(false), hierarchical data(true)"
+      },
+      "voiceSearchOptimization": {
+        "score": 80,
+        "maxScore": 100,
+        "details": "Optimized for voice queries about hours, location, contact, and pricing"
+      },
+      "semanticRichness": {
+        "score": 83,
+        "maxScore": 100,
+        "details": "Rich semantic vocabulary with 10/12 advanced properties"
+      },
+      "knowledgeGraphAlignment": {
+        "score": 100,
+        "maxScore": 100,
+        "details": "Aligned with knowledge graph standards: social links, founding date, geo data, ratings"
+      }
+    },
+    "performance": {
+      "coreWebVitalsImpact": {
+        "score": 100,
+        "maxScore": 100,
+        "details": "Optimized loading: idle callback(true), timeouts(true), deferred execution(true)"
+      },
+      "loadTimeImpact": {
+        "score": 90,
+        "maxScore": 100,
+        "details": "Schema size: ~31KB, Smart loading implemented, Caching enabled"
+      },
+      "renderBlockingImpact": {
+        "score": 100,
+        "maxScore": 100,
+        "details": "Non-blocking implementation: async loading(true), deferred to idle(true)"
+      },
+      "memoryUsage": {
+        "score": 90,
+        "maxScore": 100,
+        "details": "73 schema objects, ~31KB total, caching implemented"
+      },
+      "cacheEfficiency": {
+        "score": 85,
+        "maxScore": 100,
+        "details": "Schema caching, duplicate prevention, and DOM optimization implemented"
+      },
+      "userEngagementMetrics": {
+        "score": 100,
+        "maxScore": 100,
+        "details": "Enhanced tracking for product views, video engagement, forms, and performance metrics"
+      }
+    },
+    "businessImpact": {
+      "organicTraffic": {
+        "currentMonthlyTraffic": 1500,
+        "projectedIncrease": "29%",
+        "additionalMonthlyVisitors": 428,
+        "annualizedValue": "$256800",
+        "confidence": 90
+      },
+      "clickThroughRate": {
+        "currentCTR": "3%",
+        "projectedCTR": "4%",
+        "improvement": "34%",
+        "additionalClicks": 102,
+        "confidence": 95
+      },
+      "voiceSearchCapture": {
+        "monthlyVoiceSearches": 200,
+        "estimatedCaptureRate": "21%",
+        "additionalVoiceTraffic": 43,
+        "yearlyValue": "$38250",
+        "confidence": 85
+      },
+      "brandAuthority": {
+        "knowledgeGraphLikelihood": "High",
+        "trustSignalScore": "9/10",
+        "competitiveAdvantage": "Significant",
+        "brandRecognitionLift": "37%",
+        "marketPositioning": "Industry Leader",
+        "confidence": 91.33333333333333
+      }
+    }
+  },
+  "recommendations": []
+}
