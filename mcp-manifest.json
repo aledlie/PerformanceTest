@@ -1,0 +1,355 @@
+{
+  "name": "performance-test-suite",
+  "version": "1.0.0",
+  "description": "Comprehensive performance testing suite with Core Web Vitals, load testing, stress testing, soak testing, and scalability testing",
+  "author": "Performance Test Suite",
+  "license": "MIT",
+  "homepage": "https://github.com/aledlie/PerformanceTest",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aledlie/PerformanceTest"
+  },
+  "capabilities": {
+    "tools": [
+      {
+        "name": "run_performance_suite",
+        "description": "Run the complete performance test suite with configurable options",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string",
+              "description": "Target URL to test",
+              "default": "https://inspiredmovementaustin.com"
+            },
+            "suite_type": {
+              "type": "string",
+              "enum": ["quick", "comprehensive", "endurance", "custom"],
+              "description": "Type of test suite to run",
+              "default": "comprehensive"
+            },
+            "output_dir": {
+              "type": "string",
+              "description": "Directory for output reports",
+              "default": "./performance-reports"
+            },
+            "custom_tests": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": ["core-web-vitals", "beyond-core-web-vitals", "load", "stress", "soak", "scalability"]
+              },
+              "description": "Custom test selection (required if suite_type is 'custom')"
+            }
+          }
+        }
+      },
+      {
+        "name": "run_core_web_vitals",
+        "description": "Run Core Web Vitals testing (LCP, FID, CLS)",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string",
+              "description": "Target URL to test",
+              "default": "https://inspiredmovementaustin.com"
+            },
+            "iterations": {
+              "type": "number",
+              "description": "Number of test iterations",
+              "default": 5,
+              "minimum": 1,
+              "maximum": 20
+            },
+            "output": {
+              "type": "string",
+              "description": "Output file path",
+              "default": "./performance-reports/core-web-vitals-report.json"
+            }
+          }
+        }
+      },
+      {
+        "name": "run_beyond_core_web_vitals",
+        "description": "Run Beyond Core Web Vitals testing (TTFB, FCP, TTI, TBT, SI)",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string",
+              "description": "Target URL to test",
+              "default": "https://inspiredmovementaustin.com"
+            },
+            "iterations": {
+              "type": "number",
+              "description": "Number of test iterations",
+              "default": 5,
+              "minimum": 1,
+              "maximum": 20
+            },
+            "output": {
+              "type": "string",
+              "description": "Output file path",
+              "default": "./performance-reports/beyond-core-web-vitals-report.json"
+            }
+          }
+        }
+      },
+      {
+        "name": "run_load_test",
+        "description": "Run load testing to evaluate performance under expected traffic",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string",
+              "description": "Target URL to test",
+              "default": "https://inspiredmovementaustin.com"
+            },
+            "max_users": {
+              "type": "number",
+              "description": "Maximum concurrent users",
+              "default": 50,
+              "minimum": 1,
+              "maximum": 500
+            },
+            "ramp_up_time": {
+              "type": "number",
+              "description": "Ramp-up time in seconds",
+              "default": 60,
+              "minimum": 10,
+              "maximum": 600
+            },
+            "test_duration": {
+              "type": "number",
+              "description": "Test duration in seconds",
+              "default": 300,
+              "minimum": 60,
+              "maximum": 1800
+            },
+            "request_delay": {
+              "type": "number",
+              "description": "Delay between requests per user (ms)",
+              "default": 1000,
+              "minimum": 100,
+              "maximum": 10000
+            },
+            "output": {
+              "type": "string",
+              "description": "Output file path",
+              "default": "./performance-reports/load-test-report.json"
+            }
+          }
+        }
+      },
+      {
+        "name": "run_stress_test",
+        "description": "Run stress testing to find the system breaking point",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string",
+              "description": "Target URL to test",
+              "default": "https://inspiredmovementaustin.com"
+            },
+            "initial_users": {
+              "type": "number",
+              "description": "Starting number of users",
+              "default": 10,
+              "minimum": 1,
+              "maximum": 100
+            },
+            "max_users": {
+              "type": "number",
+              "description": "Maximum users to test",
+              "default": 200,
+              "minimum": 10,
+              "maximum": 1000
+            },
+            "step_size": {
+              "type": "number",
+              "description": "User increment per step",
+              "default": 10,
+              "minimum": 1,
+              "maximum": 50
+            },
+            "step_duration": {
+              "type": "number",
+              "description": "Duration per step in seconds",
+              "default": 60,
+              "minimum": 30,
+              "maximum": 300
+            },
+            "request_interval": {
+              "type": "number",
+              "description": "Interval between requests (ms)",
+              "default": 500,
+              "minimum": 100,
+              "maximum": 5000
+            },
+            "output": {
+              "type": "string",
+              "description": "Output file path",
+              "default": "./performance-reports/stress-test-report.json"
+            }
+          }
+        }
+      },
+      {
+        "name": "run_soak_test",
+        "description": "Run soak/endurance testing for extended periods",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string",
+              "description": "Target URL to test",
+              "default": "https://inspiredmovementaustin.com"
+            },
+            "concurrent_users": {
+              "type": "number",
+              "description": "Number of concurrent users",
+              "default": 25,
+              "minimum": 1,
+              "maximum": 100
+            },
+            "test_duration_hours": {
+              "type": "number",
+              "description": "Test duration in hours",
+              "default": 0.5,
+              "minimum": 0.1,
+              "maximum": 24
+            },
+            "request_interval": {
+              "type": "number",
+              "description": "Request interval in ms",
+              "default": 2000,
+              "minimum": 500,
+              "maximum": 10000
+            },
+            "sampling_interval": {
+              "type": "number",
+              "description": "Metrics sampling interval in ms",
+              "default": 60000,
+              "minimum": 10000,
+              "maximum": 300000
+            },
+            "output": {
+              "type": "string",
+              "description": "Output file path",
+              "default": "./performance-reports/soak-test-report.json"
+            }
+          }
+        }
+      },
+      {
+        "name": "run_scalability_test",
+        "description": "Run multi-dimensional scalability testing",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string",
+              "description": "Target URL to test",
+              "default": "https://inspiredmovementaustin.com"
+            },
+            "user_scenarios": {
+              "type": "array",
+              "items": {
+                "type": "number"
+              },
+              "description": "User count scenarios to test",
+              "default": [1, 5, 10, 25, 50, 100]
+            },
+            "data_scenarios": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": ["light", "medium", "heavy"]
+              },
+              "description": "Data load scenarios",
+              "default": ["light", "medium", "heavy"]
+            },
+            "network_scenarios": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": ["fast", "slow", "mobile"]
+              },
+              "description": "Network condition scenarios",
+              "default": ["fast", "slow", "mobile"]
+            },
+            "test_duration": {
+              "type": "number",
+              "description": "Duration per scenario in seconds",
+              "default": 60,
+              "minimum": 30,
+              "maximum": 300
+            },
+            "output": {
+              "type": "string",
+              "description": "Output file path",
+              "default": "./performance-reports/scalability-test-report.json"
+            }
+          }
+        }
+      },
+      {
+        "name": "run_schema_test",
+        "description": "Run the original Schema.org impact testing",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string",
+              "description": "Target URL to test",
+              "default": "https://inspiredmovementaustin.com"
+            }
+          }
+        }
+      },
+      {
+        "name": "get_test_results",
+        "description": "Retrieve results from a previous test run",
+        "inputSchema": {
+          "type": "object",
+          "properties": {
+            "report_type": {
+              "type": "string",
+              "enum": ["master", "core-web-vitals", "beyond-core-web-vitals", "load", "stress", "soak", "scalability", "schema"],
+              "description": "Type of report to retrieve",
+              "default": "master"
+            },
+            "report_path": {
+              "type": "string",
+              "description": "Custom path to report file (overrides report_type)"
+            }
+          }
+        }
+      },
+      {
+        "name": "list_available_reports",
+        "description": "List all available test reports",
+        "inputSchema": {
+          "type": "object",
+          "properties": {}
+        }
+      },
+      {
+        "name": "get_test_status",
+        "description": "Get current status of the test server and available tests",
+        "inputSchema": {
+          "type": "object",
+          "properties": {}
+        }
+      }
+    ]
+  },
+  "server": {
+    "command": "node",
+    "args": ["mcp-server.js"],
+    "env": {}
+  }
+}

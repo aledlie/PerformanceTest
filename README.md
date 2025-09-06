@@ -162,6 +162,39 @@ Each test suite supports various configuration options:
 - `--network` - Network conditions (default: fast,slow,mobile)
 - `--duration` - Test duration per scenario (default: 120)
 
+## 🤖 MCP Server for AI Tools
+
+This suite can be run as an MCP (Model Context Protocol) server, allowing AI tools like Claude, Amazon Q, and others to run performance tests programmatically.
+
+### Quick MCP Setup
+
+```bash
+# Start the MCP server
+npm run mcp-server
+
+# Or directly
+node mcp-server.js
+```
+
+### Available MCP Tools
+- `run_performance_suite` - Run complete test suite
+- `run_core_web_vitals` - Core Web Vitals testing
+- `run_load_test` - Load testing
+- `run_stress_test` - Stress testing
+- `run_soak_test` - Soak/endurance testing
+- `run_scalability_test` - Scalability testing
+- `get_test_results` - Retrieve test results
+- `list_available_reports` - List available reports
+
+### Example AI Interactions
+```
+AI: "Run a comprehensive performance test on https://example.com"
+AI: "Find the breaking point for my website with stress testing"
+AI: "Show me the latest test results and provide recommendations"
+```
+
+See [MCP-SETUP.md](./MCP-SETUP.md) for detailed configuration and usage instructions.
+
 ## 📊 Reports and Output
 
 All test results are saved as JSON reports in the `performance-reports/` directory:
