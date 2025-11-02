@@ -1,0 +1,135 @@
+{
+  "testSuite": "Core Web Vitals",
+  "version": "1.0.0",
+  "status": "SUCCESS",
+  "timestamp": "2025-11-01T21:04:39.985Z",
+  "testConfig": {
+    "url": "https://zouk.mx/",
+    "iterations": 5,
+    "validMeasurements": 5
+  },
+  "coreWebVitals": {
+    "lcp": {
+      "name": "LCP",
+      "average": 593.28,
+      "median": 485.6,
+      "p75": 521.1,
+      "min": 415.7,
+      "max": 1111.7,
+      "score": 98,
+      "rating": "GOOD",
+      "passingThreshold": 2500,
+      "needsImprovementThreshold": 4000,
+      "sampleSize": 5
+    },
+    "fid": {
+      "name": "FID",
+      "average": null,
+      "median": null,
+      "p75": null,
+      "min": null,
+      "max": null,
+      "score": 0,
+      "rating": "POOR",
+      "passingThreshold": 100,
+      "needsImprovementThreshold": 300
+    },
+    "cls": {
+      "name": "CLS",
+      "average": 0,
+      "median": 0,
+      "p75": 0,
+      "min": 0,
+      "max": 0,
+      "score": 100,
+      "rating": "GOOD",
+      "passingThreshold": 0.1,
+      "needsImprovementThreshold": 0.25,
+      "sampleSize": 1
+    }
+  },
+  "overallScore": 66,
+  "recommendations": [],
+  "rawData": [
+    {
+      "iteration": 1,
+      "timestamp": "2025-11-01T21:03:54.234Z",
+      "lcp": 1111.699999988079,
+      "fid": null,
+      "cls": 0.002197733154296875,
+      "performanceMetrics": {
+        "domContentLoaded": 0.8999999761581421,
+        "loadComplete": 46,
+        "firstContentfulPaint": 1111.699999988079,
+        "timeToInteractive": 1079.699999988079,
+        "totalBytes": 29120,
+        "domNodes": 533
+      },
+      "errors": []
+    },
+    {
+      "iteration": 2,
+      "timestamp": "2025-11-01T21:04:04.007Z",
+      "lcp": 485.59999999403954,
+      "fid": null,
+      "cls": null,
+      "performanceMetrics": {
+        "domContentLoaded": 0.5999999940395355,
+        "loadComplete": 13.699999988079071,
+        "firstContentfulPaint": 485.59999999403954,
+        "timeToInteractive": 570.8000000119209,
+        "totalBytes": 29121,
+        "domNodes": 533
+      },
+      "errors": []
+    },
+    {
+      "iteration": 3,
+      "timestamp": "2025-11-01T21:04:12.946Z",
+      "lcp": 432.30000001192093,
+      "fid": null,
+      "cls": null,
+      "performanceMetrics": {
+        "domContentLoaded": 0.7000000178813934,
+        "loadComplete": 51.69999998807907,
+        "firstContentfulPaint": 432.30000001192093,
+        "timeToInteractive": 568.0999999940395,
+        "totalBytes": 29120,
+        "domNodes": 533
+      },
+      "errors": []
+    },
+    {
+      "iteration": 4,
+      "timestamp": "2025-11-01T21:04:21.974Z",
+      "lcp": 415.7000000178814,
+      "fid": null,
+      "cls": null,
+      "performanceMetrics": {
+        "domContentLoaded": 0.699999988079071,
+        "loadComplete": 47,
+        "firstContentfulPaint": 415.7000000178814,
+        "timeToInteractive": 645.6000000238419,
+        "totalBytes": 29121,
+        "domNodes": 533
+      },
+      "errors": []
+    },
+    {
+      "iteration": 5,
+      "timestamp": "2025-11-01T21:04:30.947Z",
+      "lcp": 521.0999999940395,
+      "fid": null,
+      "cls": null,
+      "performanceMetrics": {
+        "domContentLoaded": 0.9000000059604645,
+        "loadComplete": 50.20000001788139,
+        "firstContentfulPaint": 521.0999999940395,
+        "timeToInteractive": 591.5,
+        "totalBytes": 29120,
+        "domNodes": 533
+      },
+      "errors": []
+    }
+  ]
+}
