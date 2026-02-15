@@ -78,7 +78,7 @@ class BeyondCoreWebVitalsTest {
             metrics.ttfb = responseTime;
 
             // Wait for full page load
-            await page.waitForLoadState('networkidle');
+            await page.waitForNetworkIdle({ idleTime: 500, timeout: 30000 });
 
             // Get comprehensive performance metrics
             const performanceData = await page.evaluate(() => {
