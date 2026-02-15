@@ -2,82 +2,92 @@
   "testSuite": "Beyond Core Web Vitals",
   "version": "1.0.0",
   "status": "SUCCESS",
-  "timestamp": "2025-11-01T21:04:44.819Z",
+  "timestamp": "2026-02-15T09:10:41.312Z",
   "testConfig": {
-    "url": "https://zouk.mx/",
+    "url": "https://google.com",
     "iterations": 5,
-    "validMeasurements": 5
+    "validMeasurements": 1
   },
   "extendedMetrics": {
     "ttfb": {
       "name": "TTFB",
       "unit": "ms",
-      "average": 899.6,
-      "median": 811,
-      "p75": 1047,
-      "min": 737,
-      "max": 1154,
-      "score": 19,
-      "rating": "POOR",
+      "average": 70,
+      "median": 70,
+      "p75": 70,
+      "min": 70,
+      "max": 70,
+      "score": 97,
+      "rating": "GOOD",
       "passingThreshold": 200,
       "needsImprovementThreshold": 500,
-      "sampleSize": 5
+      "sampleSize": 1
     },
     "fcp": {
       "name": "FCP",
       "unit": "ms",
-      "average": null,
-      "median": null,
-      "p75": null,
-      "min": null,
-      "max": null,
-      "score": 0,
-      "rating": "POOR",
+      "average": 211.7,
+      "median": 211.7,
+      "p75": 211.7,
+      "min": 211.7,
+      "max": 211.7,
+      "score": 99,
+      "rating": "GOOD",
       "passingThreshold": 1800,
-      "needsImprovementThreshold": 3000
+      "needsImprovementThreshold": 3000,
+      "sampleSize": 1
     },
     "tti": {
       "name": "TTI",
       "unit": "ms",
-      "average": null,
-      "median": null,
-      "p75": null,
-      "min": null,
-      "max": null,
-      "score": 0,
-      "rating": "POOR",
+      "average": 317.3,
+      "median": 317.3,
+      "p75": 317.3,
+      "min": 317.3,
+      "max": 317.3,
+      "score": 99,
+      "rating": "GOOD",
       "passingThreshold": 3800,
-      "needsImprovementThreshold": 7300
+      "needsImprovementThreshold": 7300,
+      "sampleSize": 1
     },
     "tbt": {
       "name": "TBT",
       "unit": "ms",
-      "average": null,
-      "median": null,
-      "p75": null,
-      "min": null,
-      "max": null,
-      "score": 0,
-      "rating": "POOR",
+      "average": 0,
+      "median": 0,
+      "p75": 0,
+      "min": 0,
+      "max": 0,
+      "score": 100,
+      "rating": "GOOD",
       "passingThreshold": 200,
-      "needsImprovementThreshold": 600
+      "needsImprovementThreshold": 600,
+      "sampleSize": 1
     },
     "si": {
       "name": "SI",
       "unit": "ms",
-      "average": null,
-      "median": null,
-      "p75": null,
-      "min": null,
-      "max": null,
-      "score": 0,
-      "rating": "POOR",
+      "average": 243.38,
+      "median": 243.38,
+      "p75": 243.38,
+      "min": 243.38,
+      "max": 243.38,
+      "score": 99,
+      "rating": "GOOD",
       "passingThreshold": 3400,
-      "needsImprovementThreshold": 5800
+      "needsImprovementThreshold": 5800,
+      "sampleSize": 1
     }
   },
   "performanceInsights": {
     "resourceAnalysis": {
+      "totalRequests": 35,
+      "totalBytes": 858985,
+      "imageRequests": 7,
+      "scriptRequests": 3,
+      "stylesheetRequests": 1,
+      "avgResourceTime": 30.95,
       "insights": [
         "Request count is reasonable",
         "Page size is within acceptable limits",
@@ -85,91 +95,58 @@
       ]
     },
     "networkAnalysis": {
+      "domContentLoaded": 0.1,
+      "loadComplete": 0,
+      "domInteractive": 175.2,
+      "domComplete": 271.2,
+      "redirectTime": 0,
+      "dnsTime": 0,
+      "connectTime": 22.4,
+      "requestTime": 83.8,
+      "responseTime": 13.8,
+      "domParsingTime": 57.7,
+      "resourceLoadTime": 0.8,
       "bottlenecks": []
     }
   },
-  "overallScore": 4,
-  "recommendations": [
-    {
-      "metric": "TTFB",
-      "priority": "HIGH",
-      "issue": "Time to First Byte is 811ms (POOR)",
-      "solutions": [
-        "Optimize server-side processing and database queries",
-        "Implement proper caching strategies (Redis, Memcached)",
-        "Use a Content Delivery Network (CDN)",
-        "Optimize DNS resolution with faster DNS providers",
-        "Consider server-side rendering optimization"
-      ]
-    },
-    {
-      "metric": "FCP",
-      "priority": "HIGH",
-      "issue": "First Contentful Paint is nullms (POOR)",
-      "solutions": [
-        "Prioritize above-the-fold content loading",
-        "Inline critical CSS and defer non-critical CSS",
-        "Optimize web font loading with font-display: swap",
-        "Minimize render-blocking resources",
-        "Use resource hints (preload, prefetch, preconnect)"
-      ]
-    },
-    {
-      "metric": "TTI",
-      "priority": "MEDIUM",
-      "issue": "Time to Interactive is nullms (POOR)",
-      "solutions": [
-        "Minimize main thread work with code splitting",
-        "Remove unused JavaScript code",
-        "Implement efficient event listeners",
-        "Use web workers for heavy computations",
-        "Optimize third-party script loading"
-      ]
-    },
-    {
-      "metric": "TBT",
-      "priority": "MEDIUM",
-      "issue": "Total Blocking Time is nullms (POOR)",
-      "solutions": [
-        "Break up long-running tasks into smaller chunks",
-        "Use setTimeout or requestIdleCallback for non-critical work",
-        "Optimize JavaScript execution and parsing",
-        "Implement progressive enhancement",
-        "Consider using a service worker for background processing"
-      ]
-    },
-    {
-      "metric": "Speed Index",
-      "priority": "MEDIUM",
-      "issue": "Speed Index is nullms (POOR)",
-      "solutions": [
-        "Optimize the critical rendering path",
-        "Implement progressive image loading",
-        "Use skeleton screens or loading placeholders",
-        "Prioritize visible content loading",
-        "Minimize layout shifts during loading"
-      ]
-    }
-  ],
+  "overallScore": 99,
+  "recommendations": [],
   "rawData": [
     {
       "iteration": 1,
-      "timestamp": "2025-11-01T21:04:40.152Z",
-      "ttfb": 1154,
-      "fcp": null,
-      "tti": null,
-      "tbt": null,
-      "si": null,
-      "performanceDetails": null,
-      "resourceMetrics": null,
-      "errors": [
-        "page.waitForLoadState is not a function"
-      ]
+      "timestamp": "2026-02-15T09:10:38.594Z",
+      "ttfb": 70,
+      "fcp": 211.70000000298023,
+      "tti": 317.29999999701977,
+      "tbt": 0,
+      "si": 243.3800000011921,
+      "performanceDetails": {
+        "domContentLoaded": 0.10000000894069672,
+        "loadComplete": 0,
+        "domInteractive": 175.20000000298023,
+        "domComplete": 271.20000000298023,
+        "redirectTime": 0,
+        "dnsTime": 0,
+        "connectTime": 22.400000005960464,
+        "requestTime": 83.79999999701977,
+        "responseTime": 13.799999997019768,
+        "domParsingTime": 57.70000000298023,
+        "resourceLoadTime": 0.7999999970197678
+      },
+      "resourceMetrics": {
+        "totalRequests": 35,
+        "totalBytes": 858985,
+        "imageRequests": 7,
+        "scriptRequests": 3,
+        "stylesheetRequests": 1,
+        "avgResourceTime": 30.945714286395482
+      },
+      "errors": []
     },
     {
       "iteration": 2,
-      "timestamp": "2025-11-01T21:04:41.360Z",
-      "ttfb": 811,
+      "timestamp": "2026-02-15T09:10:39.610Z",
+      "ttfb": null,
       "fcp": null,
       "tti": null,
       "tbt": null,
@@ -177,13 +154,13 @@
       "performanceDetails": null,
       "resourceMetrics": null,
       "errors": [
-        "page.waitForLoadState is not a function"
+        "HTTP 429: "
       ]
     },
     {
       "iteration": 3,
-      "timestamp": "2025-11-01T21:04:42.204Z",
-      "ttfb": 737,
+      "timestamp": "2026-02-15T09:10:40.047Z",
+      "ttfb": null,
       "fcp": null,
       "tti": null,
       "tbt": null,
@@ -191,13 +168,13 @@
       "performanceDetails": null,
       "resourceMetrics": null,
       "errors": [
-        "page.waitForLoadState is not a function"
+        "HTTP 429: "
       ]
     },
     {
       "iteration": 4,
-      "timestamp": "2025-11-01T21:04:42.974Z",
-      "ttfb": 749,
+      "timestamp": "2026-02-15T09:10:40.594Z",
+      "ttfb": null,
       "fcp": null,
       "tti": null,
       "tbt": null,
@@ -205,13 +182,13 @@
       "performanceDetails": null,
       "resourceMetrics": null,
       "errors": [
-        "page.waitForLoadState is not a function"
+        "HTTP 429: "
       ]
     },
     {
       "iteration": 5,
-      "timestamp": "2025-11-01T21:04:43.765Z",
-      "ttfb": 1047,
+      "timestamp": "2026-02-15T09:10:40.897Z",
+      "ttfb": null,
       "fcp": null,
       "tti": null,
       "tbt": null,
@@ -219,7 +196,7 @@
       "performanceDetails": null,
       "resourceMetrics": null,
       "errors": [
-        "page.waitForLoadState is not a function"
+        "HTTP 429: "
       ]
     }
   ]

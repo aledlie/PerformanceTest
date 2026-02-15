@@ -2,25 +2,25 @@
   "testSuite": "Core Web Vitals",
   "version": "1.0.0",
   "status": "SUCCESS",
-  "timestamp": "2025-11-01T21:04:39.985Z",
+  "timestamp": "2026-02-15T09:10:38.494Z",
   "testConfig": {
-    "url": "https://zouk.mx/",
+    "url": "https://google.com",
     "iterations": 5,
-    "validMeasurements": 5
+    "validMeasurements": 1
   },
   "coreWebVitals": {
     "lcp": {
       "name": "LCP",
-      "average": 593.28,
-      "median": 485.6,
-      "p75": 521.1,
-      "min": 415.7,
-      "max": 1111.7,
-      "score": 98,
+      "average": 242.9,
+      "median": 242.9,
+      "p75": 242.9,
+      "min": 242.9,
+      "max": 242.9,
+      "score": 99,
       "rating": "GOOD",
       "passingThreshold": 2500,
       "needsImprovementThreshold": 4000,
-      "sampleSize": 5
+      "sampleSize": 1
     },
     "fid": {
       "name": "FID",
@@ -36,100 +36,92 @@
     },
     "cls": {
       "name": "CLS",
-      "average": 0,
-      "median": 0,
-      "p75": 0,
-      "min": 0,
-      "max": 0,
-      "score": 100,
-      "rating": "GOOD",
+      "average": null,
+      "median": null,
+      "p75": null,
+      "min": null,
+      "max": null,
+      "score": 0,
+      "rating": "POOR",
       "passingThreshold": 0.1,
-      "needsImprovementThreshold": 0.25,
-      "sampleSize": 1
+      "needsImprovementThreshold": 0.25
     }
   },
-  "overallScore": 66,
-  "recommendations": [],
+  "overallScore": 33,
+  "recommendations": [
+    {
+      "metric": "CLS",
+      "priority": "MEDIUM",
+      "issue": "Cumulative Layout Shift is null (POOR)",
+      "solutions": [
+        "Set explicit dimensions for images and videos",
+        "Reserve space for dynamic content and ads",
+        "Use font-display: swap for web fonts",
+        "Avoid inserting content above existing content",
+        "Use transform animations instead of layout-changing properties"
+      ]
+    }
+  ],
   "rawData": [
     {
       "iteration": 1,
-      "timestamp": "2025-11-01T21:03:54.234Z",
-      "lcp": 1111.699999988079,
+      "timestamp": "2026-02-15T09:10:23.749Z",
+      "lcp": 242.8999999910593,
       "fid": null,
-      "cls": 0.002197733154296875,
+      "cls": null,
       "performanceMetrics": {
-        "domContentLoaded": 0.8999999761581421,
-        "loadComplete": 46,
-        "firstContentfulPaint": 1111.699999988079,
-        "timeToInteractive": 1079.699999988079,
-        "totalBytes": 29120,
-        "domNodes": 533
+        "domContentLoaded": 0.10000000894069672,
+        "loadComplete": 0,
+        "firstContentfulPaint": 242.8999999910593,
+        "timeToInteractive": 201.1000000089407,
+        "totalBytes": 55855,
+        "domNodes": 455
       },
       "errors": []
     },
     {
       "iteration": 2,
-      "timestamp": "2025-11-01T21:04:04.007Z",
-      "lcp": 485.59999999403954,
+      "timestamp": "2026-02-15T09:10:31.808Z",
+      "lcp": null,
       "fid": null,
       "cls": null,
-      "performanceMetrics": {
-        "domContentLoaded": 0.5999999940395355,
-        "loadComplete": 13.699999988079071,
-        "firstContentfulPaint": 485.59999999403954,
-        "timeToInteractive": 570.8000000119209,
-        "totalBytes": 29121,
-        "domNodes": 533
-      },
-      "errors": []
+      "performanceMetrics": null,
+      "errors": [
+        "HTTP 429: "
+      ]
     },
     {
       "iteration": 3,
-      "timestamp": "2025-11-01T21:04:12.946Z",
-      "lcp": 432.30000001192093,
+      "timestamp": "2026-02-15T09:10:33.619Z",
+      "lcp": null,
       "fid": null,
       "cls": null,
-      "performanceMetrics": {
-        "domContentLoaded": 0.7000000178813934,
-        "loadComplete": 51.69999998807907,
-        "firstContentfulPaint": 432.30000001192093,
-        "timeToInteractive": 568.0999999940395,
-        "totalBytes": 29120,
-        "domNodes": 533
-      },
-      "errors": []
+      "performanceMetrics": null,
+      "errors": [
+        "HTTP 429: "
+      ]
     },
     {
       "iteration": 4,
-      "timestamp": "2025-11-01T21:04:21.974Z",
-      "lcp": 415.7000000178814,
+      "timestamp": "2026-02-15T09:10:35.241Z",
+      "lcp": null,
       "fid": null,
       "cls": null,
-      "performanceMetrics": {
-        "domContentLoaded": 0.699999988079071,
-        "loadComplete": 47,
-        "firstContentfulPaint": 415.7000000178814,
-        "timeToInteractive": 645.6000000238419,
-        "totalBytes": 29121,
-        "domNodes": 533
-      },
-      "errors": []
+      "performanceMetrics": null,
+      "errors": [
+        "HTTP 429: "
+      ]
     },
     {
       "iteration": 5,
-      "timestamp": "2025-11-01T21:04:30.947Z",
-      "lcp": 521.0999999940395,
+      "timestamp": "2026-02-15T09:10:36.984Z",
+      "lcp": null,
       "fid": null,
       "cls": null,
-      "performanceMetrics": {
-        "domContentLoaded": 0.9000000059604645,
-        "loadComplete": 50.20000001788139,
-        "firstContentfulPaint": 521.0999999940395,
-        "timeToInteractive": 591.5,
-        "totalBytes": 29120,
-        "domNodes": 533
-      },
-      "errors": []
+      "performanceMetrics": null,
+      "errors": [
+        "HTTP 429: "
+      ]
     }
   ]
 }

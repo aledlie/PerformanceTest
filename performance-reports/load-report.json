@@ -2,146 +2,146 @@
   "testSuite": "Load Testing",
   "version": "1.0.0",
   "status": "SUCCESS",
-  "timestamp": "2025-11-01T21:09:46.965Z",
+  "timestamp": "2026-02-15T09:15:42.783Z",
   "testConfiguration": {
-    "targetUrl": "https://zouk.mx/",
+    "targetUrl": "https://google.com",
     "maxConcurrentUsers": 50,
     "rampUpDuration": 60,
     "testDuration": 300,
-    "actualDuration": 302
+    "actualDuration": 301
   },
   "requestStatistics": {
-    "total": 6096,
-    "successful": 3150,
-    "failed": 2946,
-    "successRate": "51.67%",
-    "errorRate": "48.33%"
+    "total": 9663,
+    "successful": 0,
+    "failed": 9663,
+    "successRate": "0.00%",
+    "errorRate": "100.00%"
   },
   "performanceMetrics": {
-    "averageResponseTime": 1930,
-    "medianResponseTime": 2022,
-    "p95ResponseTime": 2982,
-    "p99ResponseTime": 3046,
-    "minResponseTime": 147,
-    "maxResponseTime": 3971,
-    "requestsPerSecond": 20.32,
-    "peakRPS": 21
+    "averageResponseTime": 0,
+    "medianResponseTime": 0,
+    "p95ResponseTime": 0,
+    "p99ResponseTime": 0,
+    "minResponseTime": 0,
+    "maxResponseTime": 0,
+    "requestsPerSecond": 32.21,
+    "peakRPS": 31
   },
   "errorAnalysis": {
-    "totalErrors": 2946,
+    "totalErrors": 9663,
     "errorsByType": {
-      "Request failed with status code 507": 2946
+      "Request failed with status code 429": 9663
     },
     "errorsByStatusCode": {
-      "507": 2946
+      "429": 9663
     },
-    "mostCommonError": "Request failed with status code 507",
-    "errorRate": 0.48326771653543305
+    "mostCommonError": "Request failed with status code 429",
+    "errorRate": 1
   },
   "loadPatterns": {
     "timeSlices": [
       {
-        "startTime": "2025-11-01T21:04:46.085Z",
+        "startTime": "2026-02-15T09:10:42.531Z",
         "duration": 30,
-        "requests": 332,
-        "successfulRequests": 332,
-        "failedRequests": 0,
-        "averageResponseTime": 266,
-        "requestsPerSecond": 11.066666666666666
+        "requests": 290,
+        "successfulRequests": 0,
+        "failedRequests": 290,
+        "averageResponseTime": 0,
+        "requestsPerSecond": 9.666666666666666
       },
       {
-        "startTime": "2025-11-01T21:05:16.085Z",
+        "startTime": "2026-02-15T09:11:12.531Z",
         "duration": 30,
-        "requests": 473,
-        "successfulRequests": 344,
-        "failedRequests": 129,
-        "averageResponseTime": 1911,
-        "requestsPerSecond": 15.766666666666667
+        "requests": 824,
+        "successfulRequests": 0,
+        "failedRequests": 824,
+        "averageResponseTime": 0,
+        "requestsPerSecond": 27.466666666666665
       },
       {
-        "startTime": "2025-11-01T21:05:46.085Z",
+        "startTime": "2026-02-15T09:11:42.531Z",
         "duration": 30,
-        "requests": 664,
-        "successfulRequests": 311,
-        "failedRequests": 353,
-        "averageResponseTime": 2146,
-        "requestsPerSecond": 22.133333333333333
+        "requests": 1073,
+        "successfulRequests": 0,
+        "failedRequests": 1073,
+        "averageResponseTime": 0,
+        "requestsPerSecond": 35.766666666666666
       },
       {
-        "startTime": "2025-11-01T21:06:16.085Z",
+        "startTime": "2026-02-15T09:12:12.531Z",
         "duration": 30,
-        "requests": 665,
-        "successfulRequests": 321,
-        "failedRequests": 344,
-        "averageResponseTime": 2193,
-        "requestsPerSecond": 22.166666666666668
+        "requests": 1072,
+        "successfulRequests": 0,
+        "failedRequests": 1072,
+        "averageResponseTime": 0,
+        "requestsPerSecond": 35.733333333333334
       },
       {
-        "startTime": "2025-11-01T21:06:46.085Z",
+        "startTime": "2026-02-15T09:12:42.531Z",
         "duration": 30,
-        "requests": 663,
-        "successfulRequests": 307,
-        "failedRequests": 356,
-        "averageResponseTime": 2199,
-        "requestsPerSecond": 22.1
+        "requests": 1076,
+        "successfulRequests": 0,
+        "failedRequests": 1076,
+        "averageResponseTime": 0,
+        "requestsPerSecond": 35.86666666666667
       },
       {
-        "startTime": "2025-11-01T21:07:16.085Z",
+        "startTime": "2026-02-15T09:13:12.531Z",
         "duration": 30,
-        "requests": 661,
-        "successfulRequests": 290,
-        "failedRequests": 371,
-        "averageResponseTime": 2214,
-        "requestsPerSecond": 22.033333333333335
+        "requests": 1074,
+        "successfulRequests": 0,
+        "failedRequests": 1074,
+        "averageResponseTime": 0,
+        "requestsPerSecond": 35.8
       },
       {
-        "startTime": "2025-11-01T21:07:46.085Z",
+        "startTime": "2026-02-15T09:13:42.531Z",
         "duration": 30,
-        "requests": 667,
-        "successfulRequests": 314,
-        "failedRequests": 353,
-        "averageResponseTime": 2152,
-        "requestsPerSecond": 22.233333333333334
+        "requests": 1074,
+        "successfulRequests": 0,
+        "failedRequests": 1074,
+        "averageResponseTime": 0,
+        "requestsPerSecond": 35.8
       },
       {
-        "startTime": "2025-11-01T21:08:16.085Z",
+        "startTime": "2026-02-15T09:14:12.531Z",
         "duration": 30,
-        "requests": 674,
-        "successfulRequests": 316,
-        "failedRequests": 358,
-        "averageResponseTime": 2072,
-        "requestsPerSecond": 22.466666666666665
+        "requests": 1081,
+        "successfulRequests": 0,
+        "failedRequests": 1081,
+        "averageResponseTime": 0,
+        "requestsPerSecond": 36.03333333333333
       },
       {
-        "startTime": "2025-11-01T21:08:46.085Z",
+        "startTime": "2026-02-15T09:14:42.531Z",
         "duration": 30,
-        "requests": 661,
-        "successfulRequests": 316,
-        "failedRequests": 345,
-        "averageResponseTime": 2179,
-        "requestsPerSecond": 22.033333333333335
+        "requests": 1072,
+        "successfulRequests": 0,
+        "failedRequests": 1072,
+        "averageResponseTime": 0,
+        "requestsPerSecond": 35.733333333333334
       },
       {
-        "startTime": "2025-11-01T21:09:16.085Z",
+        "startTime": "2026-02-15T09:15:12.531Z",
         "duration": 30,
-        "requests": 636,
-        "successfulRequests": 299,
-        "failedRequests": 337,
-        "averageResponseTime": 2093,
-        "requestsPerSecond": 21.2
+        "requests": 1027,
+        "successfulRequests": 0,
+        "failedRequests": 1027,
+        "averageResponseTime": 0,
+        "requestsPerSecond": 34.233333333333334
       }
     ],
     "patterns": {
-      "peakLoad": 22.466666666666665,
-      "averageLoad": 20.32,
-      "loadVariation": 0.1782136406525827
+      "peakLoad": 36.03333333333333,
+      "averageLoad": 32.21,
+      "loadVariation": 0.24564593645505478
     }
   },
   "recommendations": [
     {
       "category": "Reliability",
       "priority": "CRITICAL",
-      "issue": "High error rate: 48.33%",
+      "issue": "High error rate: 100.00%",
       "impact": "Service availability and user experience severely affected",
       "solutions": [
         "Investigate server capacity and resource constraints",
@@ -150,442 +150,429 @@
         "Scale infrastructure to handle concurrent load",
         "Review database connection pooling and timeouts"
       ]
-    },
-    {
-      "category": "User Experience",
-      "priority": "MEDIUM",
-      "issue": "Average response time: 1930ms exceeds 1 second",
-      "impact": "User experience degraded, potential for increased bounce rate",
-      "solutions": [
-        "Optimize critical rendering path",
-        "Implement progressive loading and lazy loading",
-        "Compress and optimize assets (images, CSS, JS)",
-        "Use HTTP/2 and server push for improved loading",
-        "Consider implementing service workers for caching"
-      ]
     }
   ],
   "timeline": [
     {
-      "timestamp": 1762031089883,
+      "timestamp": 1771146646330,
       "activeUsers": 4,
-      "totalRequests": 9,
-      "totalErrors": 0,
-      "requestsPerSecond": 3
-    },
-    {
-      "timestamp": 1762031094885,
-      "activeUsers": 8,
-      "totalRequests": 36,
-      "totalErrors": 0,
-      "requestsPerSecond": 8
-    },
-    {
-      "timestamp": 1762031099885,
-      "activeUsers": 12,
-      "totalRequests": 78,
-      "totalErrors": 0,
-      "requestsPerSecond": 11
-    },
-    {
-      "timestamp": 1762031104886,
-      "activeUsers": 16,
-      "totalRequests": 137,
-      "totalErrors": 0,
-      "requestsPerSecond": 10
-    },
-    {
-      "timestamp": 1762031109887,
-      "activeUsers": 20,
-      "totalRequests": 217,
-      "totalErrors": 0,
-      "requestsPerSecond": 11
-    },
-    {
-      "timestamp": 1762031114891,
-      "activeUsers": 24,
-      "totalRequests": 299,
-      "totalErrors": 0,
-      "requestsPerSecond": 6
-    },
-    {
-      "timestamp": 1762031119891,
-      "activeUsers": 29,
-      "totalRequests": 363,
-      "totalErrors": 0,
-      "requestsPerSecond": 0
-    },
-    {
-      "timestamp": 1762031124893,
-      "activeUsers": 33,
-      "totalRequests": 416,
-      "totalErrors": 0,
-      "requestsPerSecond": 0
-    },
-    {
-      "timestamp": 1762031129893,
-      "activeUsers": 37,
-      "totalRequests": 478,
+      "totalRequests": 6,
       "totalErrors": 6,
-      "requestsPerSecond": 6
-    },
-    {
-      "timestamp": 1762031134895,
-      "activeUsers": 41,
-      "totalRequests": 555,
-      "totalErrors": 24,
-      "requestsPerSecond": 8
-    },
-    {
-      "timestamp": 1762031139894,
-      "activeUsers": 45,
-      "totalRequests": 639,
-      "totalErrors": 55,
-      "requestsPerSecond": 3
-    },
-    {
-      "timestamp": 1762031144895,
-      "activeUsers": 49,
-      "totalRequests": 741,
-      "totalErrors": 103,
-      "requestsPerSecond": 6
-    },
-    {
-      "timestamp": 1762031149896,
-      "activeUsers": 50,
-      "totalRequests": 855,
-      "totalErrors": 164,
-      "requestsPerSecond": 10
-    },
-    {
-      "timestamp": 1762031154897,
-      "activeUsers": 50,
-      "totalRequests": 964,
-      "totalErrors": 221,
-      "requestsPerSecond": 9
-    },
-    {
-      "timestamp": 1762031159899,
-      "activeUsers": 50,
-      "totalRequests": 1072,
-      "totalErrors": 277,
-      "requestsPerSecond": 10
-    },
-    {
-      "timestamp": 1762031164898,
-      "activeUsers": 50,
-      "totalRequests": 1182,
-      "totalErrors": 334,
       "requestsPerSecond": 1
     },
     {
-      "timestamp": 1762031169899,
-      "activeUsers": 50,
-      "totalRequests": 1295,
-      "totalErrors": 401,
-      "requestsPerSecond": 15
+      "timestamp": 1771146651331,
+      "activeUsers": 8,
+      "totalRequests": 27,
+      "totalErrors": 27,
+      "requestsPerSecond": 3
     },
     {
-      "timestamp": 1762031174898,
-      "activeUsers": 50,
-      "totalRequests": 1415,
-      "totalErrors": 460,
-      "requestsPerSecond": 15
+      "timestamp": 1771146656333,
+      "activeUsers": 12,
+      "totalRequests": 62,
+      "totalErrors": 62,
+      "requestsPerSecond": 3
     },
     {
-      "timestamp": 1762031179899,
-      "activeUsers": 50,
-      "totalRequests": 1526,
-      "totalErrors": 520,
+      "timestamp": 1771146661332,
+      "activeUsers": 16,
+      "totalRequests": 114,
+      "totalErrors": 114,
+      "requestsPerSecond": 6
+    },
+    {
+      "timestamp": 1771146666333,
+      "activeUsers": 20,
+      "totalRequests": 179,
+      "totalErrors": 179,
+      "requestsPerSecond": 7
+    },
+    {
+      "timestamp": 1771146671334,
+      "activeUsers": 24,
+      "totalRequests": 264,
+      "totalErrors": 264,
+      "requestsPerSecond": 14
+    },
+    {
+      "timestamp": 1771146676334,
+      "activeUsers": 29,
+      "totalRequests": 356,
+      "totalErrors": 356,
       "requestsPerSecond": 10
     },
     {
-      "timestamp": 1762031184900,
-      "activeUsers": 50,
-      "totalRequests": 1629,
-      "totalErrors": 572,
-      "requestsPerSecond": 2
-    },
-    {
-      "timestamp": 1762031189901,
-      "activeUsers": 50,
-      "totalRequests": 1741,
-      "totalErrors": 628,
-      "requestsPerSecond": 3
-    },
-    {
-      "timestamp": 1762031194902,
-      "activeUsers": 50,
-      "totalRequests": 1851,
-      "totalErrors": 690,
-      "requestsPerSecond": 3
-    },
-    {
-      "timestamp": 1762031199904,
-      "activeUsers": 50,
-      "totalRequests": 1960,
-      "totalErrors": 745,
-      "requestsPerSecond": 7
-    },
-    {
-      "timestamp": 1762031204905,
-      "activeUsers": 50,
-      "totalRequests": 2071,
-      "totalErrors": 807,
-      "requestsPerSecond": 13
-    },
-    {
-      "timestamp": 1762031209905,
-      "activeUsers": 50,
-      "totalRequests": 2183,
-      "totalErrors": 861,
-      "requestsPerSecond": 9
-    },
-    {
-      "timestamp": 1762031214905,
-      "activeUsers": 50,
-      "totalRequests": 2290,
-      "totalErrors": 919,
-      "requestsPerSecond": 8
-    },
-    {
-      "timestamp": 1762031219906,
-      "activeUsers": 50,
-      "totalRequests": 2401,
-      "totalErrors": 979,
-      "requestsPerSecond": 5
-    },
-    {
-      "timestamp": 1762031224906,
-      "activeUsers": 50,
-      "totalRequests": 2510,
-      "totalErrors": 1042,
-      "requestsPerSecond": 7
-    },
-    {
-      "timestamp": 1762031229906,
-      "activeUsers": 50,
-      "totalRequests": 2629,
-      "totalErrors": 1110,
+      "timestamp": 1771146681334,
+      "activeUsers": 33,
+      "totalRequests": 467,
+      "totalErrors": 467,
       "requestsPerSecond": 18
     },
     {
-      "timestamp": 1762031234907,
-      "activeUsers": 50,
-      "totalRequests": 2737,
-      "totalErrors": 1163,
-      "requestsPerSecond": 9
+      "timestamp": 1771146686336,
+      "activeUsers": 37,
+      "totalRequests": 591,
+      "totalErrors": 591,
+      "requestsPerSecond": 16
     },
     {
-      "timestamp": 1762031239909,
-      "activeUsers": 50,
-      "totalRequests": 2843,
-      "totalErrors": 1216,
-      "requestsPerSecond": 8
-    },
-    {
-      "timestamp": 1762031244910,
-      "activeUsers": 50,
-      "totalRequests": 2959,
-      "totalErrors": 1280,
-      "requestsPerSecond": 12
-    },
-    {
-      "timestamp": 1762031249911,
-      "activeUsers": 50,
-      "totalRequests": 3067,
-      "totalErrors": 1335,
-      "requestsPerSecond": 9
-    },
-    {
-      "timestamp": 1762031254912,
-      "activeUsers": 50,
-      "totalRequests": 3180,
-      "totalErrors": 1400,
-      "requestsPerSecond": 10
-    },
-    {
-      "timestamp": 1762031259923,
-      "activeUsers": 50,
-      "totalRequests": 3285,
-      "totalErrors": 1468,
-      "requestsPerSecond": 9
-    },
-    {
-      "timestamp": 1762031264924,
-      "activeUsers": 50,
-      "totalRequests": 3396,
-      "totalErrors": 1526,
-      "requestsPerSecond": 8
-    },
-    {
-      "timestamp": 1762031269925,
-      "activeUsers": 50,
-      "totalRequests": 3508,
-      "totalErrors": 1586,
-      "requestsPerSecond": 8
-    },
-    {
-      "timestamp": 1762031274927,
-      "activeUsers": 50,
-      "totalRequests": 3615,
-      "totalErrors": 1641,
-      "requestsPerSecond": 5
-    },
-    {
-      "timestamp": 1762031279928,
-      "activeUsers": 50,
-      "totalRequests": 3729,
-      "totalErrors": 1702,
-      "requestsPerSecond": 6
-    },
-    {
-      "timestamp": 1762031284928,
-      "activeUsers": 50,
-      "totalRequests": 3845,
-      "totalErrors": 1769,
-      "requestsPerSecond": 13
-    },
-    {
-      "timestamp": 1762031289927,
-      "activeUsers": 50,
-      "totalRequests": 3956,
-      "totalErrors": 1832,
-      "requestsPerSecond": 21
-    },
-    {
-      "timestamp": 1762031294933,
-      "activeUsers": 50,
-      "totalRequests": 4065,
-      "totalErrors": 1887,
-      "requestsPerSecond": 7
-    },
-    {
-      "timestamp": 1762031299935,
-      "activeUsers": 50,
-      "totalRequests": 4176,
-      "totalErrors": 1943,
-      "requestsPerSecond": 10
-    },
-    {
-      "timestamp": 1762031304936,
-      "activeUsers": 50,
-      "totalRequests": 4285,
-      "totalErrors": 2000,
-      "requestsPerSecond": 8
-    },
-    {
-      "timestamp": 1762031309936,
-      "activeUsers": 50,
-      "totalRequests": 4401,
-      "totalErrors": 2060,
-      "requestsPerSecond": 5
-    },
-    {
-      "timestamp": 1762031314937,
-      "activeUsers": 50,
-      "totalRequests": 4515,
-      "totalErrors": 2120,
-      "requestsPerSecond": 1
-    },
-    {
-      "timestamp": 1762031319936,
-      "activeUsers": 50,
-      "totalRequests": 4626,
-      "totalErrors": 2181,
-      "requestsPerSecond": 10
-    },
-    {
-      "timestamp": 1762031324937,
-      "activeUsers": 50,
-      "totalRequests": 4739,
-      "totalErrors": 2243,
-      "requestsPerSecond": 14
-    },
-    {
-      "timestamp": 1762031329937,
-      "activeUsers": 50,
-      "totalRequests": 4849,
-      "totalErrors": 2297,
-      "requestsPerSecond": 4
-    },
-    {
-      "timestamp": 1762031334938,
-      "activeUsers": 50,
-      "totalRequests": 4960,
-      "totalErrors": 2358,
-      "requestsPerSecond": 14
-    },
-    {
-      "timestamp": 1762031339939,
-      "activeUsers": 50,
-      "totalRequests": 5072,
-      "totalErrors": 2412,
+      "timestamp": 1771146691336,
+      "activeUsers": 41,
+      "totalRequests": 728,
+      "totalErrors": 728,
       "requestsPerSecond": 11
     },
     {
-      "timestamp": 1762031344940,
-      "activeUsers": 50,
-      "totalRequests": 5180,
-      "totalErrors": 2467,
-      "requestsPerSecond": 4
+      "timestamp": 1771146696335,
+      "activeUsers": 45,
+      "totalRequests": 886,
+      "totalErrors": 886,
+      "requestsPerSecond": 21
     },
     {
-      "timestamp": 1762031349939,
-      "activeUsers": 50,
-      "totalRequests": 5292,
-      "totalErrors": 2525,
-      "requestsPerSecond": 7
+      "timestamp": 1771146701337,
+      "activeUsers": 49,
+      "totalRequests": 1058,
+      "totalErrors": 1058,
+      "requestsPerSecond": 23
     },
     {
-      "timestamp": 1762031354939,
+      "timestamp": 1771146706338,
       "activeUsers": 50,
-      "totalRequests": 5400,
-      "totalErrors": 2584,
-      "requestsPerSecond": 9
+      "totalRequests": 1239,
+      "totalErrors": 1239,
+      "requestsPerSecond": 23
     },
     {
-      "timestamp": 1762031359940,
+      "timestamp": 1771146711339,
       "activeUsers": 50,
-      "totalRequests": 5511,
-      "totalErrors": 2640,
-      "requestsPerSecond": 0
+      "totalRequests": 1415,
+      "totalErrors": 1415,
+      "requestsPerSecond": 21
     },
     {
-      "timestamp": 1762031364940,
+      "timestamp": 1771146716341,
       "activeUsers": 50,
-      "totalRequests": 5622,
-      "totalErrors": 2703,
-      "requestsPerSecond": 7
+      "totalRequests": 1595,
+      "totalErrors": 1595,
+      "requestsPerSecond": 22
     },
     {
-      "timestamp": 1762031369941,
+      "timestamp": 1771146721342,
       "activeUsers": 50,
-      "totalRequests": 5734,
-      "totalErrors": 2762,
-      "requestsPerSecond": 12
+      "totalRequests": 1775,
+      "totalErrors": 1775,
+      "requestsPerSecond": 25
     },
     {
-      "timestamp": 1762031374942,
+      "timestamp": 1771146726343,
       "activeUsers": 50,
-      "totalRequests": 5846,
-      "totalErrors": 2822,
-      "requestsPerSecond": 8
-    },
-    {
-      "timestamp": 1762031379943,
-      "activeUsers": 50,
-      "totalRequests": 5963,
-      "totalErrors": 2886,
+      "totalRequests": 1949,
+      "totalErrors": 1949,
       "requestsPerSecond": 17
     },
     {
-      "timestamp": 1762031384944,
-      "activeUsers": 43,
-      "totalRequests": 6072,
-      "totalErrors": 2944,
-      "requestsPerSecond": 10
+      "timestamp": 1771146731342,
+      "activeUsers": 50,
+      "totalRequests": 2131,
+      "totalErrors": 2131,
+      "requestsPerSecond": 18
+    },
+    {
+      "timestamp": 1771146736344,
+      "activeUsers": 50,
+      "totalRequests": 2313,
+      "totalErrors": 2313,
+      "requestsPerSecond": 28
+    },
+    {
+      "timestamp": 1771146741345,
+      "activeUsers": 50,
+      "totalRequests": 2489,
+      "totalErrors": 2489,
+      "requestsPerSecond": 18
+    },
+    {
+      "timestamp": 1771146746347,
+      "activeUsers": 50,
+      "totalRequests": 2669,
+      "totalErrors": 2669,
+      "requestsPerSecond": 22
+    },
+    {
+      "timestamp": 1771146751348,
+      "activeUsers": 50,
+      "totalRequests": 2844,
+      "totalErrors": 2844,
+      "requestsPerSecond": 18
+    },
+    {
+      "timestamp": 1771146756349,
+      "activeUsers": 50,
+      "totalRequests": 3029,
+      "totalErrors": 3029,
+      "requestsPerSecond": 26
+    },
+    {
+      "timestamp": 1771146761349,
+      "activeUsers": 50,
+      "totalRequests": 3202,
+      "totalErrors": 3202,
+      "requestsPerSecond": 18
+    },
+    {
+      "timestamp": 1771146766352,
+      "activeUsers": 50,
+      "totalRequests": 3386,
+      "totalErrors": 3386,
+      "requestsPerSecond": 27
+    },
+    {
+      "timestamp": 1771146771354,
+      "activeUsers": 50,
+      "totalRequests": 3562,
+      "totalErrors": 3562,
+      "requestsPerSecond": 21
+    },
+    {
+      "timestamp": 1771146776356,
+      "activeUsers": 50,
+      "totalRequests": 3740,
+      "totalErrors": 3740,
+      "requestsPerSecond": 21
+    },
+    {
+      "timestamp": 1771146781357,
+      "activeUsers": 50,
+      "totalRequests": 3922,
+      "totalErrors": 3922,
+      "requestsPerSecond": 23
+    },
+    {
+      "timestamp": 1771146786357,
+      "activeUsers": 50,
+      "totalRequests": 4099,
+      "totalErrors": 4099,
+      "requestsPerSecond": 21
+    },
+    {
+      "timestamp": 1771146791357,
+      "activeUsers": 50,
+      "totalRequests": 4279,
+      "totalErrors": 4279,
+      "requestsPerSecond": 25
+    },
+    {
+      "timestamp": 1771146796358,
+      "activeUsers": 50,
+      "totalRequests": 4454,
+      "totalErrors": 4454,
+      "requestsPerSecond": 16
+    },
+    {
+      "timestamp": 1771146801361,
+      "activeUsers": 50,
+      "totalRequests": 4633,
+      "totalErrors": 4633,
+      "requestsPerSecond": 14
+    },
+    {
+      "timestamp": 1771146806363,
+      "activeUsers": 50,
+      "totalRequests": 4820,
+      "totalErrors": 4820,
+      "requestsPerSecond": 30
+    },
+    {
+      "timestamp": 1771146811363,
+      "activeUsers": 50,
+      "totalRequests": 4991,
+      "totalErrors": 4991,
+      "requestsPerSecond": 13
+    },
+    {
+      "timestamp": 1771146816363,
+      "activeUsers": 50,
+      "totalRequests": 5176,
+      "totalErrors": 5176,
+      "requestsPerSecond": 26
+    },
+    {
+      "timestamp": 1771146821365,
+      "activeUsers": 50,
+      "totalRequests": 5347,
+      "totalErrors": 5347,
+      "requestsPerSecond": 13
+    },
+    {
+      "timestamp": 1771146826365,
+      "activeUsers": 50,
+      "totalRequests": 5529,
+      "totalErrors": 5529,
+      "requestsPerSecond": 19
+    },
+    {
+      "timestamp": 1771146831367,
+      "activeUsers": 50,
+      "totalRequests": 5711,
+      "totalErrors": 5711,
+      "requestsPerSecond": 23
+    },
+    {
+      "timestamp": 1771146836368,
+      "activeUsers": 50,
+      "totalRequests": 5891,
+      "totalErrors": 5891,
+      "requestsPerSecond": 23
+    },
+    {
+      "timestamp": 1771146841368,
+      "activeUsers": 50,
+      "totalRequests": 6070,
+      "totalErrors": 6070,
+      "requestsPerSecond": 22
+    },
+    {
+      "timestamp": 1771146846369,
+      "activeUsers": 50,
+      "totalRequests": 6251,
+      "totalErrors": 6251,
+      "requestsPerSecond": 26
+    },
+    {
+      "timestamp": 1771146851370,
+      "activeUsers": 50,
+      "totalRequests": 6428,
+      "totalErrors": 6428,
+      "requestsPerSecond": 20
+    },
+    {
+      "timestamp": 1771146856371,
+      "activeUsers": 50,
+      "totalRequests": 6608,
+      "totalErrors": 6608,
+      "requestsPerSecond": 23
+    },
+    {
+      "timestamp": 1771146861370,
+      "activeUsers": 50,
+      "totalRequests": 6782,
+      "totalErrors": 6782,
+      "requestsPerSecond": 13
+    },
+    {
+      "timestamp": 1771146866370,
+      "activeUsers": 50,
+      "totalRequests": 6971,
+      "totalErrors": 6971,
+      "requestsPerSecond": 31
+    },
+    {
+      "timestamp": 1771146871372,
+      "activeUsers": 50,
+      "totalRequests": 7144,
+      "totalErrors": 7144,
+      "requestsPerSecond": 18
+    },
+    {
+      "timestamp": 1771146876372,
+      "activeUsers": 50,
+      "totalRequests": 7326,
+      "totalErrors": 7326,
+      "requestsPerSecond": 21
+    },
+    {
+      "timestamp": 1771146881372,
+      "activeUsers": 50,
+      "totalRequests": 7505,
+      "totalErrors": 7505,
+      "requestsPerSecond": 23
+    },
+    {
+      "timestamp": 1771146886372,
+      "activeUsers": 50,
+      "totalRequests": 7684,
+      "totalErrors": 7684,
+      "requestsPerSecond": 17
+    },
+    {
+      "timestamp": 1771146891373,
+      "activeUsers": 50,
+      "totalRequests": 7866,
+      "totalErrors": 7866,
+      "requestsPerSecond": 28
+    },
+    {
+      "timestamp": 1771146896373,
+      "activeUsers": 50,
+      "totalRequests": 8039,
+      "totalErrors": 8039,
+      "requestsPerSecond": 16
+    },
+    {
+      "timestamp": 1771146901373,
+      "activeUsers": 50,
+      "totalRequests": 8224,
+      "totalErrors": 8224,
+      "requestsPerSecond": 25
+    },
+    {
+      "timestamp": 1771146906374,
+      "activeUsers": 50,
+      "totalRequests": 8403,
+      "totalErrors": 8403,
+      "requestsPerSecond": 24
+    },
+    {
+      "timestamp": 1771146911375,
+      "activeUsers": 50,
+      "totalRequests": 8580,
+      "totalErrors": 8580,
+      "requestsPerSecond": 17
+    },
+    {
+      "timestamp": 1771146916377,
+      "activeUsers": 50,
+      "totalRequests": 8757,
+      "totalErrors": 8757,
+      "requestsPerSecond": 16
+    },
+    {
+      "timestamp": 1771146921377,
+      "activeUsers": 50,
+      "totalRequests": 8935,
+      "totalErrors": 8935,
+      "requestsPerSecond": 24
+    },
+    {
+      "timestamp": 1771146926378,
+      "activeUsers": 50,
+      "totalRequests": 9113,
+      "totalErrors": 9113,
+      "requestsPerSecond": 19
+    },
+    {
+      "timestamp": 1771146931379,
+      "activeUsers": 50,
+      "totalRequests": 9293,
+      "totalErrors": 9293,
+      "requestsPerSecond": 19
+    },
+    {
+      "timestamp": 1771146936380,
+      "activeUsers": 50,
+      "totalRequests": 9471,
+      "totalErrors": 9471,
+      "requestsPerSecond": 19
+    },
+    {
+      "timestamp": 1771146941381,
+      "activeUsers": 48,
+      "totalRequests": 9650,
+      "totalErrors": 9650,
+      "requestsPerSecond": 21
     }
   ],
-  "overallScore": 50
+  "overallScore": 60
 }
