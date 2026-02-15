@@ -5,7 +5,7 @@ const fs = require('fs');
 
 class LoadTester {
     constructor(options = {}) {
-        this.testUrl = options.url || 'https://inspiredmovementaustin.com';
+        this.testUrl = options.url || 'https://www.austininspiredmovement.com/';
         this.reportPath = options.reportPath || './load-test-report.json';
         this.maxConcurrentUsers = options.maxUsers || 50;
         this.rampUpDuration = options.rampUpTime || 60; // seconds

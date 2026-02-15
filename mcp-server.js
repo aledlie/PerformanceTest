@@ -100,7 +100,7 @@ class PerformanceTestMCPServer {
 
     async runPerformanceSuite(args = {}) {
         const {
-            url = 'https://inspiredmovementaustin.com',
+            url = 'https://www.austininspiredmovement.com/',
             suite_type = 'comprehensive',
             output_dir = './performance-reports',
             custom_tests = null
@@ -183,7 +183,7 @@ class PerformanceTestMCPServer {
 
     async runCoreWebVitals(args = {}) {
         const {
-            url = 'https://inspiredmovementaustin.com',
+            url = 'https://www.austininspiredmovement.com/',
             iterations = 5,
             output = './performance-reports/core-web-vitals-report.json'
         } = args;
@@ -234,7 +234,7 @@ class PerformanceTestMCPServer {
 
     async runBeyondCoreWebVitals(args = {}) {
         const {
-            url = 'https://inspiredmovementaustin.com',
+            url = 'https://www.austininspiredmovement.com/',
             iterations = 5,
             output = './performance-reports/beyond-core-web-vitals-report.json'
         } = args;
@@ -282,7 +282,7 @@ class PerformanceTestMCPServer {
 
     async runLoadTest(args = {}) {
         const {
-            url = 'https://inspiredmovementaustin.com',
+            url = 'https://www.austininspiredmovement.com/',
             max_users = 50,
             ramp_up_time = 60,
             test_duration = 300,
@@ -342,7 +342,7 @@ class PerformanceTestMCPServer {
 
     async runStressTest(args = {}) {
         const {
-            url = 'https://inspiredmovementaustin.com',
+            url = 'https://www.austininspiredmovement.com/',
             initial_users = 10,
             max_users = 200,
             step_size = 10,
@@ -405,7 +405,7 @@ class PerformanceTestMCPServer {
 
     async runSoakTest(args = {}) {
         const {
-            url = 'https://inspiredmovementaustin.com',
+            url = 'https://www.austininspiredmovement.com/',
             concurrent_users = 25,
             test_duration_hours = 0.5, // Default to 30 minutes for MCP usage
             request_interval = 2000,
@@ -466,7 +466,7 @@ class PerformanceTestMCPServer {
 
     async runScalabilityTest(args = {}) {
         const {
-            url = 'https://inspiredmovementaustin.com',
+            url = 'https://www.austininspiredmovement.com/',
             user_scenarios = [1, 5, 10, 25, 50, 100],
             data_scenarios = ['light', 'medium', 'heavy'],
             network_scenarios = ['fast', 'slow', 'mobile'],
@@ -527,7 +527,7 @@ class PerformanceTestMCPServer {
 
     async runSchemaTest(args = {}) {
         const {
-            url = 'https://inspiredmovementaustin.com'
+            url = 'https://www.austininspiredmovement.com/'
         } = args;
 
         return new Promise((resolve, reject) => {

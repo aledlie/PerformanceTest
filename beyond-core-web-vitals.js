@@ -5,7 +5,7 @@ const fs = require('fs');
 
 class BeyondCoreWebVitalsTest {
     constructor(options = {}) {
-        this.testUrl = options.url || 'https://inspiredmovementaustin.com';
+        this.testUrl = options.url || 'https://www.austininspiredmovement.com/';
         this.reportPath = options.reportPath || './beyond-core-web-vitals-report.json';
         this.iterations = options.iterations || 5;
         this.results = [];

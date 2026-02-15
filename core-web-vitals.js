@@ -6,7 +6,7 @@ const path = require('path');
 
 class CoreWebVitalsTest {
     constructor(options = {}) {
-        this.testUrl = options.url || 'https://inspiredmovementaustin.com';
+        this.testUrl = options.url || 'https://www.austininspiredmovement.com/';
         this.reportPath = options.reportPath || './core-web-vitals-report.json';
         this.iterations = options.iterations || 5;
         this.results = [];

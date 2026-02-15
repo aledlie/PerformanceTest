@@ -13,7 +13,7 @@ const ScalabilityTester = require('./scalability-testing.js');
 
 class MasterPerformanceSuite {
     constructor(options = {}) {
-        this.testUrl = options.url || 'https://inspiredmovementaustin.com';
+        this.testUrl = options.url || 'https://www.austininspiredmovement.com/';
         this.outputDir = options.outputDir || './performance-reports';
         this.suiteOptions = options.suiteOptions || {};
         
@@ -674,7 +674,7 @@ Master Performance Test Suite
 Usage: node master-performance-suite.js [options]
 
 Options:
-  --url <url>              Target URL to test (default: https://inspiredmovementaustin.com)
+  --url <url>              Target URL to test (default: https://www.austininspiredmovement.com/)
   --output-dir <dir>       Output directory for reports (default: ./performance-reports)
   --tests <test1,test2>    Comma-separated list of tests to run
   --quick                  Run quick test suite (Core Web Vitals, Beyond Core Web Vitals, Load)

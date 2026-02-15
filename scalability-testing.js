@@ -5,7 +5,7 @@ const fs = require('fs');
 
 class ScalabilityTester {
     constructor(options = {}) {
-        this.testUrl = options.url || 'https://inspiredmovementaustin.com';
+        this.testUrl = options.url || 'https://www.austininspiredmovement.com/';
         this.reportPath = options.reportPath || './scalability-test-report.json';
         
         // Multi-dimensional scaling tests

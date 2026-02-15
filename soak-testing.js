@@ -5,7 +5,7 @@ const fs = require('fs');
 
 class SoakTester {
     constructor(options = {}) {
-        this.testUrl = options.url || 'https://inspiredmovementaustin.com';
+        this.testUrl = options.url || 'https://www.austininspiredmovement.com/';
         this.reportPath = options.reportPath || './soak-test-report.json';
         this.concurrentUsers = options.concurrentUsers || 25;
         this.testDurationHours = options.testDurationHours || 2;

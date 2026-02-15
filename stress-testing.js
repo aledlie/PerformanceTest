@@ -5,7 +5,7 @@ const fs = require('fs');
 
 class StressTester {
     constructor(options = {}) {
-        this.testUrl = options.url || 'https://inspiredmovementaustin.com';
+        this.testUrl = options.url || 'https://www.austininspiredmovement.com/';
         this.reportPath = options.reportPath || './stress-test-report.json';
         this.initialUsers = options.initialUsers || 10;
         this.maxUsers = options.maxUsers || 200;
